@@ -15,4 +15,4 @@
   - [Git](tools/git.md)
   - [GitHub](tools/github.md)
 - **Projects**
-  - [RealSNS ハンズオン](projects/RealSNS.md)
+  - [Udemy RealSNS ハンズオン](projects/Udemy-RealSNS.md)
