@@ -1,10 +1,11 @@
 # Learning Log 📚
 
-このリポジトリでは、Web開発の学習内容を整理しています。
+このリポジトリでは、Web 開発の学習内容を整理しています。
 
 ## 📌 目次
 
 - **Backend**
+  - [Basic knowledge](backend/basic_knowledge_of_backend.md)
   - [Node.js](backend/nodejs.md)
   - [Express](backend/express.md)
   - [MongoDB](backend/mongodb.md)
