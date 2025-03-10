@@ -8,6 +8,7 @@
   - [Node.js](backend/nodejs.md)
   - [Express](backend/express.md)
   - [MongoDB](backend/mongodb.md)
+  - [Postman](backend/postman.md)
 - **Frontend**
   - [React](frontend/react.md)
   - [JavaScript](frontend/javascript.md)
