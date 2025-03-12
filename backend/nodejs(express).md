@@ -27,11 +27,22 @@ app.use("/api/users", userRouter); // 特定のパスを指定
 const router = require("express").Router();
 ```
 
-## npm Mongoose 　について
+## npm Mongoose について
 
 Mongoose を使って MongoDB とやり取りすることで、データの保存・取得・更新・削除 (CRUD) を行うことができる。
 
 ### Mongoose 接続
+
+```js
+mongoose
+  .connect(process.env.MONGOURL)
+  .then(() => {
+    console.log("DBと接続中・・・");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
 
 ### データの保存・取得・更新・削除 (CRUD) API 設計
 
@@ -91,10 +102,10 @@ router.delete("/:id", async (req, res) => {
 });
 ```
 
-## npm MySQL2
+## npm MySQL2 について
 
 https://qiita.com/miyabisun/items/3a139f8f48aa34f6d566?utm_source=chatgpt.com
 
-###　 MySQL2 　接続
+###　 MySQL2 接続
 
 ### データの保存・取得・更新・削除 (CRUD) API 設計
