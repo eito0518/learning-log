@@ -1,8 +1,20 @@
+# Node.js とは？
+
+## npm とは？
+
+Node.js のパッケージマネージャー。`package.json` で管理できる。
+
+## よく使う npm コマンド
+
+- `npm init -y` → `package.json` を作る
+- `npm install <package>` → パッケージをインストール
+- `npm uninstall <package>` → パッケージを削除
+
 # Express とは？
 
 Express は Node.js で Web アプリケーションを構築するためのフレームワーク。
 
-## ルーティングの分割
+## ルーティングについて
 
 Express では、エンドポイントごとにルーティングを分けることでコードを整理できる。
 
@@ -15,11 +27,13 @@ app.use("/api/users", userRouter); // 特定のパスを指定
 const router = require("express").Router();
 ```
 
-## Mongoose による API 設計
+## npm Mongoose 　について
 
 Mongoose を使って MongoDB とやり取りすることで、データの保存・取得・更新・削除 (CRUD) を行うことができる。
 
-### データの保存・取得・更新・削除 (CRUD)
+### Mongoose 接続
+
+### データの保存・取得・更新・削除 (CRUD) API 設計
 
 クライアントから送信されたデータを保存
 
@@ -76,3 +90,11 @@ router.delete("/:id", async (req, res) => {
   res.status(200).json("データを削除しました");
 });
 ```
+
+## npm MySQL2
+
+https://qiita.com/miyabisun/items/3a139f8f48aa34f6d566?utm_source=chatgpt.com
+
+###　 MySQL2 　接続
+
+### データの保存・取得・更新・削除 (CRUD) API 設計
